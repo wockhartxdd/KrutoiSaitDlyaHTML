@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitesquare</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #00aaff;
+        }
+
+        header {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a.active {
+            color: #00aaff;
+        }
+
+        .search-box {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .search-box input {
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .search-box button {
+            padding: 5px 10px;
+            background-color: #00aaff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #ddd;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .tabs {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            background-color: #eee;
+            text-align: center;
+        }
+
+        .tabs div {
+            padding: 15px 0;
+            border-right: 1px solid #ccc;
+        }
+
+        .tabs div:last-child {
+            border-right: none;
+        }
+
+        .tabs div.active {
+            background-color: #00aaff;
+            color: white;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        section h3 {
+            margin-bottom: 15px;
+            color: #00aaff;
+        }
+
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .team-member img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            background-color: #ccc;
+        }
+
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 30px 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        footer a {
+            color: #00aaff;
+        }
+
+        .clients {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .clients img {
+            width: 80px;
+            height: 50px;
+            background-color: #ccc;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">whitesquare</div>
+        <nav>
+            <a href="" class="active">Home</a>
+            <a href="">About Us</a>
+            <a href="">Services</a>
+            <a href="">Partners</a>
+            <a href="">Customers</a>
+            <a href="">Projects</a>
+            <a href="">Careers</a>
+            <a href="">Contact</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Search">
+            <button>GO</button>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>FUSCE VITAE NIBH QUIS DIAM FERMENTUM</h1>
+        <p>Etiam adipiscing ultricies commodo.</p>
+    </div>
+
+    <div class="tabs">
+        <div class="active">1 LOREM IPSUM DOLOP</div>
+        <div>2 ULTRICIES PELLENTESQUE</div>
+        <div>3 ALIQUAM IPSUM</div>
+        <div>4 NULLAM SED MAURIS UT</div>
+    </div>
+
+    <main>
+        <section>
+            <h3>ABOUT WHITESQUARE</h3>
+            <div><img src="https://avatars.mds.yandex.net/i?id=cd4ebb5fa1f04a2490ef596b6d977f17_l-5258229-images-thumbs&n=13" width= "100" height="70"alt=""> In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla...</div>
+            <a href="">Read more</a>
+        </section>
+
+        <section>
+            <h3>A WORD FROM OUR CEO</h3>
+            <i><img src="https://avatars.mds.yandex.net/i?id=6eb0f2fede08d671de887d3ec4330983_l-4055809-images-thumbs&ref=rim&n=13&w=1074&h=1074" width= "100" height="70"alt=""> "In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla..."</i>
+            <p><strong>Yane Naumoski, CEO</strong></p>
+        </section>
+
+        <section>
+            <h3>SERVICES</h3>
+            <p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla...</p>
+            <a href="">Read more</a>
+        </section>
+
+        <section>
+            <h3>OUR TEAMS</h3>
+            <div class="team-member"><img src="https://i.pinimg.com/736x/e6/44/01/e644014a5319a52b7e75340864468a3d.jpg" alt="">Lorem Ipsum</div>
+            <i></i>
+            <div class="team-member"><img src="https://e7.pngegg.com/pngimages/245/706/png-clipart-simon-theodore-seville-chipmunk-alvin-seville-dave-seville-alvin-and-the-chipmunks-mammal-vertebrate.png" alt="">Lorem Ipsum</div>
+            <div class="team-member"><img src="https://avatars.mds.yandex.net/i?id=601e912505d70853748704825ce06da1_l-10125837-images-thumbs&ref=rim&n=13&w=900&h=900" alt="">Lorem Ipsum</div>
+        </section>
+
+        <section>
+            <h3>27/7/365 SUPPORT</h3>
+            <p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla...</p>
+            <a href="">Read more</a>
+        </section>
+    </main>
+
+    <div class="clients">
+        <img src="https://www.nonograms.ru/files/user/upload/48900_af694b1120d7dba5e39f0092eda3ab46.jpg" alt="">
+        <img src="https://avatars.mds.yandex.net/i?id=fcf998c1702e85e2f278b4971db582dd_l-4251039-images-thumbs&ref=rim&n=13&w=750&h=655" alt="">
+        <img src="https://avatars.mds.yandex.net/i?id=6815a5c52a392fe58f508ddf02928a13_l-4815936-images-thumbs&ref=rim&n=13&w=750&h=655" alt="">
+        <img src="https://avatars.mds.yandex.net/i?id=8461ec6367145d814099588f356cc045_l-5334334-images-thumbs&ref=rim&n=13&w=2100&h=1892" alt="">
+        <img src="https://avatars.mds.yandex.net/i?id=ab6cec5a69ba1ed5f893a0c1440f5e48_l-5904657-images-thumbs&n=13" alt="">
+        <img src="https://sun9-44.userapi.com/s/v1/ig2/m4JDiE3b8Z8k27mTmO0PrfZ1hoYp7gR97t1Imnjo73YfogwS75q8pZDvn_FrX7DcWXa72oADw7i10GKlt3_pMsPY.jpg?size=400x400&quality=95&crop=0,1,602,602&ava=1" alt="">
+    </div>
+
+    <footer>
+        <div>
+            <h3>TWITTER FEED</h3>
+            <p>23 Oct - In ultricies pellentesque massa a porta...</p>
+        </div>
+        <div>
+            <h3>SITEMAP</h3>
+            <p>Home | About | Services | Partners | Support | Contact</p>
+        </div>
+        <div>
+            <h3>SOCIAL NETWORKS</h3>
+            <img src="https://zelenka-com.ru/ssl/u/32/b944562cd911eaad9fb4a7b48fd1df/-/хвойный%20дворик%20%283%29.jpg" width= "100" height="70" alt="">
+            <img src="https://avatars.mds.yandex.net/i?id=f58624ad6520870d06b68f0102b395ac1f0d9ed1-16116746-images-thumbs&n=13" width= "50" height="70" alt="">
+            <img src="https://chefpoint.ru/images/rt.png" width= "50" height="70" alt="">
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        &copy; 2025 Whitesquare. A pcklab creation
+    </div>
+
+</body>
+</html>
